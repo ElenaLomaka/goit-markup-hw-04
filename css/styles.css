@@ -13,6 +13,7 @@
   --accent-color: #2196f3;
   --primary-bg-color: #ffffff;
   --secondary-accent-color: #000000;
+  --secondary-bg-color: #f5f4fa;
 }
 
 body {
@@ -222,6 +223,34 @@ img {
   width: 270px;
 }
 
+.features-heading-list .items::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-bg-color);
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.antenna::before {
+  background-image: url(../images/features-svg/antenna-1.svg);
+}
+
+.clock::before {
+  background-image: url(../images/features-svg/clock-2.svg);
+}
+
+.diagram::before {
+  background-image: url(../images/features-svg/diagram-3.svg);
+}
+
+.astronaut::before {
+  background-image: url(../images/features-svg/astronaut-4.svg);
+}
+
 .features-heading-list .items:not(:last-child) {
   margin-right: 30px;
 }
@@ -303,6 +332,10 @@ img {
 
 /*Footer*/
 
+footer {
+  background-color: #2f303a;
+}
+
 .margin-footer {
   margin-bottom: 20px;
   display: block;
@@ -315,15 +348,17 @@ img {
   line-height: 1.71;
   margin-top: 0px;
   margin-bottom: 9px;
-}
-
-footer {
-  background-color: #2f303a;
+  width: 231px;
 }
 
 .footer-section {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+}
+
+.logo-address {
+  margin-right: 70px;
 }
 
 .contacts {
@@ -346,6 +381,51 @@ footer {
 
 .logo-footer {
   color: #ffffff;
+}
+
+.join {
+}
+
+.join-text {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+  margin-bottom: 20px;
+}
+
+.join-list {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.join-list:hover,
+.join-list:focus {
+  background-color: var(--accent-color);
+}
+
+.icon-instagram {
+  background-image: url(../images/footer-svg/instagram-1.svg);
+}
+
+.icon-twitter {
+  background-image: url(../images/footer-svg/twitter-2.svg);
+}
+
+.icon-facebook {
+  background-image: url(../images/footer-svg/facebook-3.svg);
+}
+
+.icon-linkedin {
+  background-image: url(../images/footer-svg/linkedin-4.svg);
 }
 
 /*Portfolio*/
