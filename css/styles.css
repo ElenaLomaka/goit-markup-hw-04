@@ -371,7 +371,7 @@ img {
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
-  fill: #ffffff;
+  fill: var(--primary-bg-color);
 }
 
 /*Постоянные клиенты*/
@@ -398,7 +398,7 @@ img {
   align-items: center;
   width: 170px;
   height: 92px;
-  background-color: #ffffff;
+  background-color: var(--primary-bg-color);
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -418,8 +418,8 @@ img {
   fill: var(--accent-color);
 }
 
-.client-item-link:hover .clients-item-icon,
-.clients-item-link:focus .clients-item-icon {
+.client-item-link:hover,
+.clients-item-link:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -435,7 +435,7 @@ footer {
 }
 
 .footer-address {
-  color: #ffffff;
+  color: var(--primary-bg-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
