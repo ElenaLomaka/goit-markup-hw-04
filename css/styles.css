@@ -569,6 +569,8 @@ footer {
 
 .portfolio-img-link {
   display: block;
+  text-decoration: none;
+  color: var(--primary-text-color);
 }
 
 .portfolio-img-link:hover,
