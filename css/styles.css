@@ -130,6 +130,8 @@ img {
 }
 
 .contact-item {
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -191,7 +193,7 @@ img {
 
 .button {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--primary-bg-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -244,12 +246,12 @@ img {
   border-radius: 4px;
   background-color: var(--secondary-bg-color);
   margin-bottom: 30px;
+  height: 120px;
 }
 
 .features-icons-svg {
   width: 70px;
   height: 70px;
-  margin: 25px 100px;
 }
 
 .features-heading-list .items:not(:last-child) {
@@ -343,17 +345,20 @@ img {
 }
 
 .social-list-item {
+}
+
+.social-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--primary-bg-color);
 }
 
-.social-list-item:hover,
-.social-list-item:focus {
+.social-list-link:hover,
+.social-list-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -363,8 +368,8 @@ img {
   fill: #afb1b8;
 }
 
-.social-list-item:hover .social-list-icon,
-.social-list-item:focus .social-list-icon {
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
   fill: #ffffff;
 }
 
@@ -384,11 +389,9 @@ img {
 
 .clients-list {
   display: flex;
-  /* justify-content: space-between;
-  margin: 0 auto; */
 }
 
-.clients-item {
+.client-item-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -403,20 +406,20 @@ img {
   margin-right: 30px;
 }
 
-.clients-item:hover,
-.clients-item:focus {
-  border: 1px solid var(--accent-color);
-}
-
 .clients-item-icon {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
 }
 
-.clients-item-icon:hover,
-.clients-item-icon:focus {
+.client-item-link:hover .clients-item-icon,
+.client-item-link:focus .clients-item-icon {
   fill: var(--accent-color);
+}
+
+.client-item-link:hover,
+.clients-item-link:focus {
+  border: 1px solid var(--accent-color);
 }
 
 /*Footer*/
@@ -491,7 +494,7 @@ footer {
   width: 206px;
 }
 
-.join-item {
+.join-item-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -505,8 +508,8 @@ footer {
   margin-right: 10px;
 }
 
-.join-item:hover,
-.join-item:focus {
+.join-item-link:hover,
+.join-item-link:focus {
   background-color: var(--accent-color);
 }
 
