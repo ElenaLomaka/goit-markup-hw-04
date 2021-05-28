@@ -408,8 +408,6 @@ img {
 }
 
 .clients-item-icon {
-  width: 106px;
-  height: 60px;
   fill: #afb1b8;
 }
 
@@ -419,7 +417,7 @@ img {
 }
 
 .client-item-link:hover,
-.clients-item-link:focus {
+.client-item-link:focus {
   border: 1px solid var(--accent-color);
 }
 
